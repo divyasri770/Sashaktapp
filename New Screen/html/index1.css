@@ -1,0 +1,107 @@
+
+.main{
+    display: flex;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-top: 50px;
+  background-color: black;
+  transition: all 0.5s;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  color: transparent;
+}
+
+.circle::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+}
+
+.circle:hover {
+  width: 200px;
+  border-radius: 30px;
+  color: white;
+}
+
+.circle:hover::after {
+  opacity: 1;
+}
+
+.side {
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.bg-blue {
+  background-color: aquamarine;
+}
+
+.circle.puzzle {
+  background-image: url("/images/puzzle.jpg");
+  background-size: cover;
+}
+.circle.puzzle:hover {
+  background-image: url("/images/puzzle.jpg");
+  background-size: cover;
+  content: attr(data-text);
+}
+
+.circle.doodle {
+  background-image: url("/images/puzzle.jpg");
+  background-size: cover;
+}
+
+.circle.doodle:hover{
+  background-image: url("/images/doodle\ small.jpg");
+  background-size: cover;
+}
+
+.circle.education {
+  background-image: url("/images/doodle\ small.jpg") ;
+  background-size: cover;
+}
+
+.circle.paint {
+  background-image: url("/images/doodle\ small.jpg");
+  background-size: cover;
+}
+
+.circle.mcq {
+  background-image: url("/images/doodle\ small.jpg");
+  background-size: cover;
+}
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 260px;
+    top: 100px;
+    right:100px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.card{
+    margin:0px 20px 40px 0px;
+    transition: 0.5s;
+}
+
+.card:hover{
+    box-shadow: 2px 5px 20px black;
+}

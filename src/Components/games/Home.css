@@ -1,0 +1,20 @@
+/* Home.css */
+.home {
+  background-image: url("/public/images/cartoon.jpg");
+  background-size: cover; /* Make sure the background image covers the entire container */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the background image */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  position: fixed; /* Fixed position to center content in the viewport */
+  top: 0;
+  left: 0;
+}
+.home p, .home h1 {
+  color: #111211; 
+  text-align: center;
+  margin: 0;
+}

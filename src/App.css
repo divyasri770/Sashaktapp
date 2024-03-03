@@ -1,0 +1,258 @@
+
+.main{
+  display: flex;
+  /* text-align: center; */
+}
+.sidehead{
+  margin-top:50px;
+  padding-right: 100px;
+  height: 20px;
+  color: black;
+  
+}
+.circle{
+height: 70px;
+width: 150px;
+border: 1px solid black;
+border-radius: 50px;
+/* border-radius: 50%; */
+margin-top: 45px;
+background-color: black;
+transition: all 0.5s;
+position: relative;
+display: inline-block;
+margin-right: 20px;
+color: transparent;
+}
+
+.circle:hover,
+.circle:active {
+  box-shadow: 2px 5px 20px black;
+  background-color: red; /* Change this to the desired color */
+}
+
+/* .circle::after {
+content: attr(data-text);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+opacity: 0;
+color:black;
+font-size: 25px;
+} */
+
+/* .circle:hover {
+width: 200px;
+border-radius: 40px;
+color: white;
+}
+
+.circle:hover::after {
+opacity: 1;
+} */
+
+.side {
+margin-top: 30px;
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+padding-left: 20px;
+}
+
+.bg-blue {
+background-color: aquamarine;
+}
+
+.circle.puzzle {
+background-image: url("/public/images/wordgame.jpeg ");
+background-size: cover;
+}
+.circle.puzzle:hover {
+background-image: url("/public/images/wordgame.jpeg");
+background-size: cover;
+content: attr(data-text);
+}
+
+.circle.doodle {
+background-image: url("/public/images/memory.jpeg");
+background-size: cover;
+}
+
+.circle.doodle:hover {
+background-image: url("/public/images/memory.jpeg");
+background-size: cover;
+}
+
+.circle.education {
+background-image: url("/public/images/education.jpeg");
+background-size: cover;
+}
+.circle.mcq {
+background-image: url("/public/images/video.jpg");
+background-size: cover;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 260px;
+  top: 80px;
+  right:120px;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap:40px;
+}
+
+
+.card{
+  margin:0px 1px 2px 0px;
+  transition: 0.5s;
+}
+
+.card:hover{
+  box-shadow: 2px 5px 10px black;
+}
+.card-text{
+  font-size: 20px;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.app-container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button{
+  padding: 10px;
+  background-color: #88c9d7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.feedback-container {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+
+
+.thank-you-message {
+  text-align: center;
+  padding: 10px;
+  background-color: #cddfcd;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-message h1 {
+  margin-bottom: 10px;
+}
+.image{
+  background-image: url("/public/images/homepic2.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  /* position: fixed;  */
+  top: 0;
+  left: 0;
+}
+.image1{
+  background-image: url("/public/images/hellochild.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  /* background-position: center;  */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+}
+
+.edu{
+  background-image: url("/public/images/play.jpg");
+  background-size: cover; /* Make sure the background image covers the entire container */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the background image */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  position: fixed; /* Fixed position to center content in the viewport */
+  top: 0;
+  left: 0;
+}
+.edu1{
+  background-image: url("/public/images/homepic.jpg");
+  background-size: cover; /* Make sure the background image covers the entire container */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the background image */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  position: fixed; /* Fixed position to center content in the viewport */
+  top: 0;
+  left: 0;
+}
